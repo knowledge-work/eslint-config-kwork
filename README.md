@@ -28,6 +28,6 @@ Like followings
 Currently kwork has 2 configs.
 
 - `kwork/base`
-    - common configs (without settings for frontend (e.g. for react))
+  - common configs (without settings for frontend (e.g. for react))
 - `kwork/frontend`
-    - configs for frontend projects.
+  - configs for frontend projects.

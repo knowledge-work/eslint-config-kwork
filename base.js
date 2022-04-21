@@ -10,39 +10,47 @@ module.exports = {
     "plugin:eslint-comments/recommended",
     // NOTE(hori-ryota): prettierは全設定の最後に記述する必要があるため、ここでは設定せずextendsする側でそれぞれ設定する
   ],
-  "rules": {
+  rules: {
     /**
      * eslint
      */
     "arrow-body-style": "off",
-    "camelcase": [
+    camelcase: [
       "error",
-      { "properties": "never", "ignoreDestructuring": false, "allow": ["^[A-Z].*_[A-Z].*"] }
+      {
+        properties: "never",
+        ignoreDestructuring: false,
+        allow: ["^[A-Z].*_[A-Z].*"],
+      },
     ],
     "default-case-last": "error", // 統一したいだけなのでfirstでもいい
     "default-param-last": "off", // optional paramを最後尾にしたいのでoff
-    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
     "max-lines": [
       "error",
       {
-        "max": 250,
-        "skipBlankLines": true,
-        "skipComments": true
-      }
+        max: 250,
+        skipBlankLines: true,
+        skipComments: true,
+      },
     ],
     "no-alert": "error",
     "no-console": "error",
     "no-promise-executor-return": "error",
     // NOTE: import/no-relative-parent-importsだと@でのimportもNGになるのでno-restricted-importsで../を禁止する
-    "no-restricted-imports": ["error", { "patterns": ["..*"] }],
+    "no-restricted-imports": ["error", { patterns: ["..*"] }],
     "no-unused-expressions": "off", // duplidate @typescript-eslint/no-unused-expressions
     "no-useless-constructor": "off",
     "no-use-before-define": "off", // duplidate @typescript-eslint/no-use-before-define
     "no-param-reassign": [
       "error",
       {
-        "props": false
-      }
+        props: false,
+      },
     ],
 
     /**
@@ -51,7 +59,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": [
       "error",
       // TODO: assertionStyle: never にしたい
-      { "assertionStyle": "as", "objectLiteralTypeAssertions": "never" }
+      { assertionStyle: "as", objectLiteralTypeAssertions: "never" },
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/consistent-type-imports": "error",
@@ -61,21 +69,23 @@ module.exports = {
     "@typescript-eslint/no-unused-expressions": [
       "error",
       {
-        "allowShortCircuit": true,
-        "allowTernary": true
-      }
+        allowShortCircuit: true,
+        allowTernary: true,
+      },
     ], // https://github.com/facebook/create-react-app/issues/8107
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/no-useless-constructor": ["error"],
 
     /**
      * eslint-comments
      */
-    "eslint-comments/disable-enable-pair": ["error", { "allowWholeFile": true }],
+    "eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }],
     "eslint-comments/no-unused-disable": "error",
     "eslint-comments/no-use": [
       "error",
-      { "allow": ["eslint-disable", "eslint-enable", "eslint-disable-next-line"] }
+      {
+        allow: ["eslint-disable", "eslint-enable", "eslint-disable-next-line"],
+      },
     ],
 
     /**
@@ -88,9 +98,9 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*.stories.tsx", "**/*.test.tsx"],
-        "optionalDependencies": false
-      }
+        devDependencies: ["**/*.stories.tsx", "**/*.test.tsx"],
+        optionalDependencies: false,
+      },
     ],
     "import/no-relative-packages": "off",
     "import/no-relative-parent-imports": "off",
@@ -98,21 +108,20 @@ module.exports = {
     "import/order": [
       "error",
       {
-        "groups": [
+        groups: [
           "builtin",
           "external",
           "internal",
           ["parent", "sibling"],
           "object",
           "type",
-          "index"
+          "index",
         ],
         "newlines-between": "always",
-        "pathGroupsExcludedImportTypes": ["builtin"],
-        "alphabetize": { "order": "asc", "caseInsensitive": true },
-        "pathGroups": [
-        ]
-      }
+        pathGroupsExcludedImportTypes: ["builtin"],
+        alphabetize: { order: "asc", caseInsensitive: true },
+        pathGroups: [],
+      },
     ],
     "import/prefer-default-export": "off",
 

@@ -16,48 +16,76 @@ module.exports = {
     "kwork/base",
     // NOTE(hori-ryota): prettierは全設定の最後に記述する必要があるため、ここでは設定せずextendsする側でそれぞれ設定する
   ],
-  "rules": {
+  rules: {
     "import/order": [
       "error",
       // NOTE(hori-ryota): pathGroupsだけ記述して上書きしたいがobjectごとreplaceされてしまうので不可。全て記述する。 (cf. https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files )
       {
-        "groups": [
+        groups: [
           "builtin",
           "external",
           "internal",
           ["parent", "sibling"],
           "object",
           "type",
-          "index"
+          "index",
         ],
         "newlines-between": "always",
-        "pathGroupsExcludedImportTypes": ["builtin"],
-        "alphabetize": { "order": "asc", "caseInsensitive": true },
-        "pathGroups": [
+        pathGroupsExcludedImportTypes: ["builtin"],
+        alphabetize: { order: "asc", caseInsensitive: true },
+        pathGroups: [
           // internal
-          { "pattern": "@/libs/**", "group": "internal", "position": "before" },
-          { "pattern": "@/generated/**", "group": "internal", "position": "before" },
-          { "pattern": "@/utils/**", "group": "internal", "position": "before" },
-          { "pattern": "@/services/**", "group": "internal", "position": "before" },
-          { "pattern": "@/mocks/**", "group": "internal", "position": "before" },
-          { "pattern": "@/pageHocs/**", "group": "internal", "position": "before" },
-          { "pattern": "@/pages/**", "group": "internal", "position": "before" },
-          { "pattern": "@/globalStates/**", "group": "internal", "position": "before" },
-          { "pattern": "@/models/**", "group": "internal", "position": "before" },
-          { "pattern": "@/usecases/**", "group": "internal", "position": "before" },
-          { "pattern": "@/repositories/**", "group": "internal", "position": "before" },
-          { "pattern": "@/components/page", "group": "internal", "position": "before" },
-          { "pattern": "@/components/context/**", "group": "internal", "position": "before" },
-          { "pattern": "@/components/functional/**", "group": "internal", "position": "before" },
-          { "pattern": "@/components/model/**", "group": "internal", "position": "before" },
-          { "pattern": "@/components/ui/**", "group": "internal", "position": "before" },
+          { pattern: "@/libs/**", group: "internal", position: "before" },
+          { pattern: "@/generated/**", group: "internal", position: "before" },
+          { pattern: "@/utils/**", group: "internal", position: "before" },
+          { pattern: "@/services/**", group: "internal", position: "before" },
+          { pattern: "@/mocks/**", group: "internal", position: "before" },
+          { pattern: "@/pageHocs/**", group: "internal", position: "before" },
+          { pattern: "@/pages/**", group: "internal", position: "before" },
+          {
+            pattern: "@/globalStates/**",
+            group: "internal",
+            position: "before",
+          },
+          { pattern: "@/models/**", group: "internal", position: "before" },
+          { pattern: "@/usecases/**", group: "internal", position: "before" },
+          {
+            pattern: "@/repositories/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/components/page",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/components/context/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/components/functional/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/components/model/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/components/ui/**",
+            group: "internal",
+            position: "before",
+          },
 
           // styles
           // 最後尾にしたいのでindex扱い
-          { "pattern": "@/styles/**", "group": "index", "position": "before" },
-          { "pattern": "./**.module.css", "group": "index", "position": "before" }
-        ]
-      }
+          { pattern: "@/styles/**", group: "index", position: "before" },
+          { pattern: "./**.module.css", group: "index", position: "before" },
+        ],
+      },
     ],
 
     /**
@@ -66,26 +94,29 @@ module.exports = {
     "react/display-name": "off",
     "react/function-component-definition": [
       "error",
-      { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
     ],
     "react/jsx-curly-newline": "off", // prettierと競合する
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [".jsx", ".tsx"]
-      }
+        extensions: [".jsx", ".tsx"],
+      },
     ],
     "react/jsx-indent": "off",
     "react/jsx-key": "error",
     "react/jsx-wrap-multilines": [
       "error",
       {
-        "declaration": false,
-        "assignment": false
-      }
+        declaration: false,
+        assignment: false,
+      },
     ],
     "react/jsx-no-constructed-context-values": "error",
-    "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }],
+    "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
     "react/no-danger": "error",
@@ -123,9 +154,9 @@ module.exports = {
       "error",
       [
         {
-          "module": "src/generated",
-          "allowReferenceFrom": ["src/models/*/type.ts"],
-          "allowSameModule": true
+          module: "src/generated",
+          allowReferenceFrom: ["src/models/*/type.ts"],
+          allowSameModule: true,
         },
         // strict-dependencies TODO: stateとmutatorで依存ルールが異なるのでディレクトリかファイルを分ける
         // {
@@ -134,98 +165,98 @@ module.exports = {
         //   "allowSameModule": true
         // },
         {
-          "module": "src/globalStates",
-          "allowReferenceFrom": [
+          module: "src/globalStates",
+          allowReferenceFrom: [
             "src/usecases",
             "src/repositories/*/repository.ts",
             "src/repositories/*/*Repository.ts",
             "src/components",
             "src/pageHocs",
-            "src/utils/hooks"
+            "src/utils/hooks",
           ],
-          "allowSameModule": true
+          allowSameModule: true,
         },
         {
-          "module": "src/usecases",
-          "allowReferenceFrom": [
+          module: "src/usecases",
+          allowReferenceFrom: [
             "src/components/page",
             "src/components/model",
             "src/repositories/*/repository.ts",
             "src/repositories/*/activityRepository.ts",
-            "src/mocks/*/repository.ts"
+            "src/mocks/*/repository.ts",
           ],
-          "allowSameModule": true
+          allowSameModule: true,
         },
         {
-          "module": "src/repositories/*",
-          "allowReferenceFrom": [
+          module: "src/repositories/*",
+          allowReferenceFrom: [
             "src/usecases/*/usecase.ts",
             "src/usecases/*/reader.ts",
-            "src/mocks/*/repository.ts"
+            "src/mocks/*/repository.ts",
           ],
-          "allowSameModule": false
+          allowSameModule: false,
         },
         {
-          "module": "src/repositories/*/converter",
-          "allowReferenceFrom": [
+          module: "src/repositories/*/converter",
+          allowReferenceFrom: [
             "src/repositories/*/repository.ts",
-            "src/repositories/*/converter.ts"
+            "src/repositories/*/converter.ts",
           ],
-          "allowSameModule": true
+          allowSameModule: true,
         },
         {
-          "module": "src/pageHocs",
+          module: "src/pageHocs",
           // NOTE: pageHocs、authとswtichMobileで依存元の層がバラけるのが気持ち悪い。pageHocsとしてまとめないほうがいいかも。
-          "allowReferenceFrom": ["src/pages", "src/components/page/*/index.ts"],
-          "allowSameModule": false
+          allowReferenceFrom: ["src/pages", "src/components/page/*/index.ts"],
+          allowSameModule: false,
         },
         {
-          "module": "src/components/page",
-          "allowReferenceFrom": ["src/pages"],
-          "allowSameModule": false
+          module: "src/components/page",
+          allowReferenceFrom: ["src/pages"],
+          allowSameModule: false,
         },
         {
-          "module": "src/components/model",
-          "allowReferenceFrom": ["src/components/page"],
-          "allowSameModule": true
+          module: "src/components/model",
+          allowReferenceFrom: ["src/components/page"],
+          allowSameModule: true,
         },
         {
-          "module": "src/components/**/_mobile/**",
-          "allowReferenceFrom": ["src/components/page/*/*.mobile.tsx"],
-          "allowSameModule": true
+          module: "src/components/**/_mobile/**",
+          allowReferenceFrom: ["src/components/page/*/*.mobile.tsx"],
+          allowSameModule: true,
         },
         {
-          "module": "src/components/ui",
-          "allowReferenceFrom": ["src/components"],
-          "allowSameModule": true
+          module: "src/components/ui",
+          allowReferenceFrom: ["src/components"],
+          allowSameModule: true,
         },
         {
-          "module": "src/components/functional",
-          "allowReferenceFrom": ["src/components"],
-          "allowSameModule": true
+          module: "src/components/functional",
+          allowReferenceFrom: ["src/components"],
+          allowSameModule: true,
         },
         {
-          "module": "src/libs/logReporter",
-          "allowReferenceFrom": [
+          module: "src/libs/logReporter",
+          allowReferenceFrom: [
             "src/usecase",
             "src/repositories/*/repository.ts",
             "src/repositories/*/activityRepository.ts",
-            "src/components/functional/ErrorBoundary"
+            "src/components/functional/ErrorBoundary",
           ],
-          "allowSameModule": false
+          allowSameModule: false,
         },
         {
-          "module": "next/router",
-          "allowReferenceFrom": ["src/libs/router.ts"],
-          "allowSameModule": false
+          module: "next/router",
+          allowReferenceFrom: ["src/libs/router.ts"],
+          allowSameModule: false,
         },
         {
-          "module": "src/mocks",
-          "allowReferenceFrom": ["src/**/*.stories.tsx", "src/**/*.test.ts"],
-          "allowSameModule": true
-        }
-      ]
-    ]
+          module: "src/mocks",
+          allowReferenceFrom: ["src/**/*.stories.tsx", "src/**/*.test.ts"],
+          allowSameModule: true,
+        },
+      ],
+    ],
   },
   overrides: [
     {
