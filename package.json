@@ -1,0 +1,35 @@
+
+{
+  "name": "eslint-config-kwork",
+  "description": "ESLint configs for KnowledgeWork's projects.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knowledge-work/eslint-config-kwork.git"
+  },
+  "// TODO: keywords": "",
+  "// TODO: license": "",
+  "files": [
+    "base.js",
+    "frontend.js"
+  ],
+  "scripts": {
+    "setup": "yarn",
+    "check": "yarn run check:prettier",
+    "check:prettier": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-next": "12.1.5",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-storybook": "0.5.10",
+    "eslint-plugin-strict-dependencies": "0.0.2",
+    "eslint-plugin-unused-imports": "2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
