@@ -58,8 +58,7 @@ module.exports = {
      */
     "@typescript-eslint/consistent-type-assertions": [
       "error",
-      // TODO: assertionStyle: never にしたい
-      { assertionStyle: "as", objectLiteralTypeAssertions: "never" },
+      { assertionStyle: "never" },
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/consistent-type-imports": "error",
