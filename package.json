@@ -6,7 +6,11 @@
     "type": "git",
     "url": "https://github.com/knowledge-work/eslint-config-kwork.git"
   },
-  "keywords": ["eslint", "config", "eslintconfig"],
+  "keywords": [
+    "eslint",
+    "config",
+    "eslintconfig"
+  ],
   "license": "MIT",
   "files": [
     "base.js",
