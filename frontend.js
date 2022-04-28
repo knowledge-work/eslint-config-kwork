@@ -121,7 +121,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/no-danger": "error",
     "react/no-invalid-html-attribute": "error",
-    "react/no-unstable-nested-components": "off", // TODO: ONにすることを検討
+    "react/no-unstable-nested-components": "error",
     "react/prop-types": "off",
     "react/require-default-props": "off",
     "react/state-in-constructor": ["error", "never"],
