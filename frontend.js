@@ -11,7 +11,7 @@ module.exports = {
   ],
   extends: [
     'airbnb',
-    // "airbnb-typescript", // TODO(hori-ryota): 未対応なのでいったんコメントアウト。入れたい。
+    'airbnb-typescript',
     'next/core-web-vitals',
     'kwork/base',
     // NOTE(hori-ryota): prettierは全設定の最後に記述する必要があるため、ここでは設定せずextendsする側でそれぞれ設定する

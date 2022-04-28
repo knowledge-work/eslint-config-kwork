@@ -5,7 +5,7 @@ module.exports = {
   ],
   extends: [
     'airbnb-base',
-    // "airbnb-typescript/base", // TODO(hori-ryota): 未対応なのでいったんコメントアウト。入れたい。
+    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:eslint-comments/recommended',
     // NOTE(hori-ryota): prettierは全設定の最後に記述する必要があるため、ここでは設定せずextendsする側でそれぞれ設定する
