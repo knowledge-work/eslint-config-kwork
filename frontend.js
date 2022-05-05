@@ -6,6 +6,8 @@ module.exports = {
     browser: true,
   },
   plugins: [
+    // jsxでfalsyな値の誤出力制御のために利用
+    'jsx-expressions',
     // 依存関係管理のために利用（自社パッケージ）
     'strict-dependencies',
   ],
@@ -141,6 +143,11 @@ module.exports = {
     'jsx-a11y/label-has-for': 'off',
     'jsx-a11y/media-has-caption': 'off',
     'jsx-a11y/no-autofocus': 'off',
+
+    /**
+     * jsx-expressions
+     */
+    'jsx-expressions/strict-logical-expressions': 'error',
 
     /**
      * @next
