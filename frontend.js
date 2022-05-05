@@ -278,9 +278,23 @@ module.exports = {
       },
     },
     {
+      files: ['.storybook/**/*'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+        'import/no-import-module-exports': 'off',
+        'strict-dependencies/strict-dependencies': 'off',
+      },
+    },
+    {
       files: ['src/pages/**/*', '*.d.ts'],
       rules: {
         'import/no-default-export': 'off',
+      },
+    },
+    {
+      files: ['*.d.ts'],
+      rules: {
+        '@typescript-eslint/consistent-type-definitions': 'off',
       },
     },
   ],
