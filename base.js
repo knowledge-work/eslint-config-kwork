@@ -79,7 +79,7 @@ module.exports = {
         allow: ['eslint-disable', 'eslint-enable', 'eslint-disable-next-line'],
       },
     ],
-    'eslint-comments/require-description': 'error',
+    'eslint-comments/require-description': ['error', { ignore: ['eslint-enable'] }],
 
     /**
      * import
