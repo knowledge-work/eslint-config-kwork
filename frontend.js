@@ -274,7 +274,7 @@ module.exports = {
         'import/no-default-export': 'off',
         'import/no-anonymous-default-export': 'off',
         'react/display-name': 'off',
-        'react-hooks/rules-of-hooks': 'warn',
+        'react-hooks/rules-of-hooks': 'off',
         '@typescript-eslint/consistent-type-assertions': 'off',
         '@typescript-eslint/padding-line-between-statements': [
           'error',
