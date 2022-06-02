@@ -132,7 +132,10 @@ module.exports = {
      * react-hooks
      */
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/exhaustive-deps': [
+      'error',
+      { additionalHooks: 'useUpdateEffect|useAsync|useAsyncFn|useRecoilCallback' },
+    ],
 
     /**
      * jsx-a11y
@@ -259,7 +262,7 @@ module.exports = {
         },
         {
           module: 'src/mocks',
-          allowReferenceFrom: ['src/**/*.stories.tsx', 'src/**/*.test.ts'],
+          allowReferenceFrom: ['src/**/*.stories.tsx', 'src/**/*.test.ts', 'src/**/*.test.tsx'],
           allowSameModule: true,
         },
       ],
