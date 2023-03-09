@@ -1188,10 +1188,10 @@ prettier-config-kwork@0.0.1:
   resolved "https://registry.yarnpkg.com/prettier-config-kwork/-/prettier-config-kwork-0.0.1.tgz#54ea9f3b192b803c25434e3a0a514819b1eb3a13"
   integrity sha512-frl2ma6Xdi1ruy4LDoG2MdeC1+n0pB5MU+x9n1l+azkoYcE7HjlvhIrGU3o43TjHEIiISB1CcZ26K2YQ4cmAPg==
 
-prettier@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
+prettier@2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
 prop-types@^15.8.1:
   version "15.8.1"
