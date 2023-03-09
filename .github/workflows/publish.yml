@@ -41,6 +41,6 @@ jobs:
             await github.rest.repos.createRelease({
               owner: "${{github.repository_owner}}",
               repo: "${{github.repository}}".split('/')[1],
-              tag_name: "${{ steps.bump-version.new_version }}",
+              tag_name: "v${{ steps.bump-version.outputs.new_version }}",
               generate_release_notes: true,
             })
