@@ -605,13 +605,14 @@ eslint-plugin-storybook@0.6.11:
     requireindex "^1.1.0"
     ts-dedent "^2.2.0"
 
-eslint-plugin-strict-dependencies@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.0.1.tgz#5c3d1a72c565f1965b3a6a94d001838658eaa637"
-  integrity sha512-KV5g9HfcB2nCYZ9fk+6Jyh9R20McnTdRtCjPve32FTk8fcjPvR+qwBmp2Z47UtXP/rPB7aEsM5GsuFWiAtV81Q==
+eslint-plugin-strict-dependencies@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.0.2.tgz#4482320e8467f967dea51f8602ceda8d4d4f7524"
+  integrity sha512-OqRM2DG+qns8FCxD+9bhEPR9aQtGE/PkmiC744VyxgpMsC6Sujk4SkdiHli5sjHk0qePMTSv5FnnitPdn2/dBw==
   dependencies:
     is-glob "^4.0.3"
     micromatch "^4.0.4"
+    normalize-path "^3.0.0"
     require-strip-json-comments "^2.0.0"
 
 eslint-plugin-unused-imports@2.0.0:
@@ -1107,6 +1108,11 @@ ms@^2.1.1:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
+
+normalize-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
+  integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
 object-assign@^4.1.1:
   version "4.1.1"
