@@ -1163,10 +1163,10 @@ picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-prettier-config-kwork@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/prettier-config-kwork/-/prettier-config-kwork-0.0.1.tgz#54ea9f3b192b803c25434e3a0a514819b1eb3a13"
-  integrity sha512-frl2ma6Xdi1ruy4LDoG2MdeC1+n0pB5MU+x9n1l+azkoYcE7HjlvhIrGU3o43TjHEIiISB1CcZ26K2YQ4cmAPg==
+prettier-config-kwork@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/prettier-config-kwork/-/prettier-config-kwork-0.0.2.tgz#b454f15fe9e7325f5f9cb27f18bd54916667786c"
+  integrity sha512-Inpw52LHFOVMWXykE0MUxXGUlbcb7mhZAEBCK2sjaLMMvzcUvkaY/fPi42xg6xf2FYwR/3gHngW61pcRQQrbfw==
 
 prettier@2.8.4:
   version "2.8.4"
