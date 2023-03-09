@@ -1,6 +1,12 @@
 {
-  extends: ['config:base', ':maintainLockFilesMonthly', 'helpers:pinGitHubActionDigests'],
+  extends: [
+    'config:base',
+    ':disableRateLimiting',
+    ':maintainLockFilesWeekly',
+    ':automergeAll',
+    'group:nodeJs',
+    'helpers:pinGitHubActionDigests',
+  ],
   timezone: 'Asia/Tokyo',
-  automerge: true,
   postUpdateOptions: ['yarnDedupeHighest'],
 }
