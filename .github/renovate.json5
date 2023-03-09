@@ -1,6 +1,6 @@
 {
-  extends: ['config:base', ':maintainLockFilesMonthly'],
+  extends: ['config:base', ':maintainLockFilesMonthly', 'helpers:pinGitHubActionDigests'],
   timezone: 'Asia/Tokyo',
-  schedule: ['before 9am on the first day of the month'],
+  automerge: true,
   postUpdateOptions: ['yarnDedupeHighest'],
 }
