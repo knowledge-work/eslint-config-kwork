@@ -8,8 +8,12 @@ module.exports = {
   plugins: [
     // jsxでfalsyな値の誤出力制御のために利用
     'jsx-expressions',
+    // テストが壊れる new Date() を禁止するために利用
+    'date',
     // 依存関係管理のために利用（自社パッケージ）
     'strict-dependencies',
+    // Result型利用時に型の未参照を防止するために利用（自社パッケージ）
+    'return-type',
   ],
   extends: [
     'airbnb',
@@ -19,6 +23,9 @@ module.exports = {
     // NOTE(hori-ryota): prettierは全設定の最後に記述する必要があるため、ここでは設定せずextendsする側でそれぞれ設定する
   ],
   rules: {
+    /**
+     * import
+     */
     'import/order': [
       'error',
       // NOTE(hori-ryota): pathGroupsだけ記述して上書きしたいがobjectごとreplaceされてしまうので不可。全て記述する。 (cf. https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files )
@@ -89,6 +96,11 @@ module.exports = {
         ],
       },
     ],
+
+    /**
+     * date
+     */
+    'date/no-new-date-without-args': 'error',
 
     /**
      * react
@@ -267,6 +279,14 @@ module.exports = {
         },
       ],
     ],
+
+    /**
+     * return-type
+     */
+    'return-type/enforce-access': [
+      'error',
+      { typeNames: ['Err<\\w*Error>', 'Promise<.*?Err<\\w*Error>.*?>'] },
+    ],
   },
   overrides: [
     {
@@ -305,6 +325,12 @@ module.exports = {
       files: ['*.d.ts'],
       rules: {
         '@typescript-eslint/consistent-type-definitions': 'off',
+      },
+    },
+    {
+      files: ['*.test.ts'],
+      rules: {
+        'return-type/enforce-access': 'off',
       },
     },
   ],
