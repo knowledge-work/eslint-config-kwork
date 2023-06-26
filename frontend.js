@@ -212,7 +212,8 @@ module.exports = {
         {
           module: 'src/models',
           allowReferenceFrom: [
-            'src/components',
+            'src/components/model',
+            'src/components/page',
             'src/globalStates',
             'src/mocks',
             'src/models',
