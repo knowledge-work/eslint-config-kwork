@@ -216,7 +216,6 @@ module.exports = {
             'src/components/page',
             'src/globalStates',
             'src/mocks',
-            'src/models',
             'src/repositories',
             'src/services',
             'src/usecases',
