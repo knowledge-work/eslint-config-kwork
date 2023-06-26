@@ -219,7 +219,6 @@ module.exports = {
             'src/repositories',
             'src/services',
             'src/usecases',
-            'src/utils/hooks',
           ],
           allowSameModule: true,
         },
