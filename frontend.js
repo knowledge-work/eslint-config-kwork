@@ -210,6 +210,20 @@ module.exports = {
           allowSameModule: true,
         },
         {
+          module: 'src/models',
+          allowReferenceFrom: [
+            'src/components',
+            'src/globalStates',
+            'src/mocks',
+            'src/models',
+            'src/repositories',
+            'src/services',
+            'src/usecases',
+            'src/utils/hooks',
+          ],
+          allowSameModule: true,
+        },
+        {
           module: 'src/repositories/*',
           allowReferenceFrom: [
             'src/usecases/*/usecase.ts',
