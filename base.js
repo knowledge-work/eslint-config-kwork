@@ -67,6 +67,9 @@ module.exports = {
     ], // https://github.com/facebook/create-react-app/issues/8107
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-useless-constructor': ['error'],
+    // @typescript-eslint v6でrecommendedからアラートが出なくなったルールを有効化
+    '@typescript-eslint/no-non-null-assertion': 'error',
+    '@typescript-eslint/no-explicit-any': 'error',
 
     /**
      * eslint-comments
