@@ -40,7 +40,7 @@
     "eslint-plugin-unused-imports": "3.0.0"
   },
   "devDependencies": {
-    "prettier": "3.0.2",
+    "prettier": "3.0.3",
     "prettier-config-kwork": "0.0.8"
   },
   "prettier": "prettier-config-kwork"
