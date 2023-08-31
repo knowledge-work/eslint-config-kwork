@@ -592,10 +592,10 @@ eslint-module-utils@^2.7.4, eslint-module-utils@^2.8.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-date@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-date/-/eslint-plugin-date-0.0.2.tgz#3ab2ae892e410c3f74af5e18980e046d253ddbbd"
-  integrity sha512-sWn+wRbRe5peJH3znPu/I9zKYLnd0QmgPXW+SZr9rZvU/U+Mx50L1fz0rCqBuE0zPrCvz0KXN1E6y3g/ND2+EQ==
+eslint-plugin-date@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-date/-/eslint-plugin-date-1.0.0.tgz#53880e949ccf589aababa7a010e740837420404c"
+  integrity sha512-tB+IqE/ghJFHdiRikySkjzSLx+WI0whA+5i8XE508LPOKUMG5+xgfMFdX6/IHbJzY0QaExCOZ/M3SoDaF32Gvg==
 
 eslint-plugin-eslint-comments@3.2.0:
   version "3.2.0"
