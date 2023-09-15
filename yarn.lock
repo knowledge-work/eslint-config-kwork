@@ -686,10 +686,10 @@ eslint-plugin-react@^7.31.7:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
-eslint-plugin-return-type@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-return-type/-/eslint-plugin-return-type-1.0.9.tgz#47297b4e6ec079a0928236d99887bc3ab05e620f"
-  integrity sha512-YBZ4oj3ZWuDFJaVxAJYQ0MH4R0dbDJyEz9uQBEqjQZfnQrcqwV+38vEc5D/CR7/LTleC7F0IQ79mXjmuz8Ao8g==
+eslint-plugin-return-type@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-return-type/-/eslint-plugin-return-type-1.0.10.tgz#6591fe5785849d3c83a595df91ce398b76e398eb"
+  integrity sha512-+5HIKvHCkr8G3npkIHAeRPt33714mAwtKtPTcHxJ6R4fw7ok78WcCf2fty6xKcNF2jjO8VQFG5xjS6g3CD4SAw==
   dependencies:
     "@typescript-eslint/utils" "5.62.0"
 
