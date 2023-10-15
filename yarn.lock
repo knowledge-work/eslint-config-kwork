@@ -696,12 +696,12 @@ eslint-plugin-react@^7.33.2:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
-eslint-plugin-return-type@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-return-type/-/eslint-plugin-return-type-1.0.10.tgz#6591fe5785849d3c83a595df91ce398b76e398eb"
-  integrity sha512-+5HIKvHCkr8G3npkIHAeRPt33714mAwtKtPTcHxJ6R4fw7ok78WcCf2fty6xKcNF2jjO8VQFG5xjS6g3CD4SAw==
+eslint-plugin-return-type@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-return-type/-/eslint-plugin-return-type-1.0.11.tgz#f9f3f6fd7f828485fb9a33cdac924c1547f0a24d"
+  integrity sha512-3J3l0VfHmT7xDPdz5NrAEvyTZ/b/HbKJXbT2eEtAhH42m5mluVVD2dWRSUUJr981KTHtfbD7SMUpWkg/iXTjmg==
   dependencies:
-    "@typescript-eslint/utils" "5.62.0"
+    "@typescript-eslint/utils" "6.7.5"
 
 eslint-plugin-storybook@0.6.15:
   version "0.6.15"
