@@ -713,10 +713,10 @@ eslint-plugin-storybook@0.6.15:
     requireindex "^1.1.0"
     ts-dedent "^2.2.0"
 
-eslint-plugin-strict-dependencies@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.2.2.tgz#3bc1bb0ba62bf1648e22f061db6321267bc352bd"
-  integrity sha512-MuAMeNcuAu5k0kxSBs1F+CymCFXzSXVVcrgvoAfIZ4iWjAD0me36TCAny/1sarYpsvxGWP88Q1jhyNIDE5u97g==
+eslint-plugin-strict-dependencies@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.2.3.tgz#604e7b75713ae4c9186d878a9108876c7a7153b4"
+  integrity sha512-Ziz3wk/rETLNbtXwnHlC32VkPGkLnvRbHDSxunAXbL/WEpQRS7KkxG3TdXYkrQ+CIz67+e4uzjQsW0eF48ZTuQ==
   dependencies:
     is-glob "4.0.3"
     micromatch "4.0.5"
