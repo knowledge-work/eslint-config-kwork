@@ -22,21 +22,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-      - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+      - uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
+
+      - uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version-file: '.node-version'
-          cache: 'yarn'
-          registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
+
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm i --frozen-lockfile
 
       - name: Bump version and publish
         id: bump-version
         run: |
           git config user.name '[bot] github action (${{ github.workflow }})'
           git config user.email 'engineer-team@knowledgework.com'
-          yarn version --${{ github.event_name == 'schedule' && 'patch' || github.event.inputs.versionClass }}
+          pnpm version --${{ github.event_name == 'schedule' && 'patch' || github.event.inputs.versionClass }}
           echo "new_version=$(jq -r .version package.json)" >> "$GITHUB_OUTPUT"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
