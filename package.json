@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "eslint-config-kwork",
   "description": "ESLint configs for KnowledgeWork's projects.",
   "version": "1.3.5",
@@ -13,6 +14,14 @@
     "eslintconfig"
   ],
   "license": "MIT",
+  "exports": {
+    "./base": {
+      "import": "./base.js"
+    },
+    "./frontend": {
+      "import": "./frontend.js"
+    }
+  },
   "files": [
     "base.js",
     "frontend.js"
@@ -26,8 +35,9 @@
     "postversion": "git push --tags && git push origin main && pnpm publish ."
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.2.1",
-    "@typescript-eslint/parser": "^6.2.1",
+    "@eslint/eslintrc": "2.1.4",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.1.0",
@@ -38,7 +48,8 @@
     "eslint-plugin-return-type": "1.0.12",
     "eslint-plugin-storybook": "0.6.15",
     "eslint-plugin-strict-dependencies": "1.3.0",
-    "eslint-plugin-unused-imports": "3.0.0"
+    "eslint-plugin-unused-imports": "3.0.0",
+    "globals": "13.24.0"
   },
   "devDependencies": {
     "prettier": "3.1.1",
