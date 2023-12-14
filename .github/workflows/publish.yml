@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name '[bot] github action (${{ github.workflow }})'
           git config user.email 'engineer-team@knowledgework.com'
-          pnpm version --${{ github.event_name == 'schedule' && 'patch' || github.event.inputs.versionClass }}
+          pnpm version ${{ github.event_name == 'schedule' && 'patch' || github.event.inputs.versionClass }}
           pnpm release
           echo "new_version=$(jq -r .version package.json)" >> "$GITHUB_OUTPUT"
         env:
