@@ -31,8 +31,9 @@
     "check": "pnpm check:prettier",
     "check:prettier": "prettier --check .",
     "format": "prettier --write .",
-    "preversion": "echo \"Run check for version $npm_package_version\" && pnpm check",
-    "postversion": "git push --tags && git push origin main && pnpm publish ."
+    "release": "pnpm release:check && pnpm release:publish",
+    "release:check": "echo \"Run check for version $npm_package_version\" && pnpm check",
+    "release:publish": "git push --tags && git push origin main && pnpm publish ."
   },
   "dependencies": {
     "@eslint/eslintrc": "2.1.4",
