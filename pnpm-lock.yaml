@@ -56,8 +56,8 @@ devDependencies:
     specifier: 3.1.1
     version: 3.1.1
   prettier-config-kwork:
-    specifier: 0.0.12
-    version: 0.0.12
+    specifier: 0.0.13
+    version: 0.0.13
 
 packages:
 
@@ -2073,8 +2073,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier-config-kwork@0.0.12:
-    resolution: {integrity: sha512-a/a66jzESHrjxVYWY1R8303ESTbIYMd/70R/YJ3hhLf112d5VHLJl/ORFiUrdAOwBRqnB8Dja0vjjEXjGSO7nQ==}
+  /prettier-config-kwork@0.0.13:
+    resolution: {integrity: sha512-edX8+FRcVAFFYbJVVD6/tpqBikDUpZrGwQ9ly/g8DpV/fZWCBRShEdMS7ZeQy1jogeq+jYG2fIs+AtwP2fZCqw==}
     dev: true
 
   /prettier@3.1.1:
