@@ -2,7 +2,7 @@
   "type": "module",
   "name": "eslint-config-kwork",
   "description": "ESLint configs for KnowledgeWork's projects.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "packageManager": "pnpm@8.14.1",
   "repository": {
     "type": "git",
