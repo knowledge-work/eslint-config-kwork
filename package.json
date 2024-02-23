@@ -36,7 +36,7 @@
     "release:publish": "git push --tags && git push origin main && pnpm publish ."
   },
   "dependencies": {
-    "@eslint/eslintrc": "3.0.1",
+    "@eslint/eslintrc": "3.0.2",
     "@typescript-eslint/eslint-plugin": "7.0.2",
     "@typescript-eslint/parser": "7.0.2",
     "eslint-config-airbnb": "19.0.4",
