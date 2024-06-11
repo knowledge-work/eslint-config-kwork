@@ -55,8 +55,8 @@ importers:
         version: 15.4.0
     devDependencies:
       prettier:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.3.2
+        version: 3.3.2
       prettier-config-kwork:
         specifier: 0.0.18
         version: 0.0.18
@@ -1190,8 +1190,8 @@ packages:
   prettier-config-kwork@0.0.18:
     resolution: {integrity: sha512-2kS9++3ZeKhCKEAtBy8VWqpMhSDAbOhk8hWEzJ1wq9gpLdiXa9swnsvglQBYXLlfuQc368bUK899AeRpsVkNwA==}
 
-  prettier@3.3.1:
-    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
+  prettier@3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2861,7 +2861,7 @@ snapshots:
 
   prettier-config-kwork@0.0.18: {}
 
-  prettier@3.3.1: {}
+  prettier@3.3.2: {}
 
   prop-types@15.8.1:
     dependencies:
