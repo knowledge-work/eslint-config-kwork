@@ -58,8 +58,8 @@ importers:
         specifier: 3.3.2
         version: 3.3.2
       prettier-config-kwork:
-        specifier: 0.0.18
-        version: 0.0.18
+        specifier: 0.0.19
+        version: 0.0.19
 
 packages:
 
@@ -1192,8 +1192,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-config-kwork@0.0.18:
-    resolution: {integrity: sha512-2kS9++3ZeKhCKEAtBy8VWqpMhSDAbOhk8hWEzJ1wq9gpLdiXa9swnsvglQBYXLlfuQc368bUK899AeRpsVkNwA==}
+  prettier-config-kwork@0.0.19:
+    resolution: {integrity: sha512-IvixYJizsgnL9/CQZt76ALELThG7HqfiL07EtF/FA2T/8SRyM6PTNSmAeAFxsBG5/qYK4NByMH/ewTlUjHQUKw==}
 
   prettier@3.3.2:
     resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
@@ -2900,7 +2900,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-config-kwork@0.0.18: {}
+  prettier-config-kwork@0.0.19: {}
 
   prettier@3.3.2: {}
 
