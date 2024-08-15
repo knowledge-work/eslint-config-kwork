@@ -39,8 +39,8 @@ importers:
         specifier: 1.3.2
         version: 1.3.2(@typescript-eslint/parser@8.1.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
       eslint-plugin-return-type:
-        specifier: 1.0.20
-        version: 1.0.20(eslint@8.57.0)(typescript@5.5.4)
+        specifier: 1.0.21
+        version: 1.0.21(eslint@8.57.0)(typescript@5.5.4)
       eslint-plugin-storybook:
         specifier: 0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -641,8 +641,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-return-type@1.0.20:
-    resolution: {integrity: sha512-jRfKtZJ0oKhrAjSIBvtXJSnh/6m7Rbul3wfSmTiJ5PlIF4MrtpR/Y5KDV0SLyBc0kKEUyNSDAz/RvLGd9zmokw==}
+  eslint-plugin-return-type@1.0.21:
+    resolution: {integrity: sha512-1mYF45G9bAnQ8NChiLbeRwVs9qJOzl8E3iZE61VRtrNvurzSz9sjJkB6nKPa/u/0A2XGbIKftBsPEm4TV4lBqw==}
 
   eslint-plugin-storybook@0.8.0:
     resolution: {integrity: sha512-CZeVO5EzmPY7qghO2t64oaFM+8FTaD4uzOEjHKp516exyTKo+skKAL9GI3QALS2BXhyALJjNtwbmr1XinGE8bA==}
@@ -2293,7 +2293,7 @@ snapshots:
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-return-type@1.0.20(eslint@8.57.0)(typescript@5.5.4):
+  eslint-plugin-return-type@1.0.21(eslint@8.57.0)(typescript@5.5.4):
     dependencies:
       '@typescript-eslint/utils': 7.2.0(eslint@8.57.0)(typescript@5.5.4)
     transitivePeerDependencies:
