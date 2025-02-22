@@ -53,7 +53,7 @@
     "globals": "16.0.0"
   },
   "devDependencies": {
-    "prettier": "3.5.1",
+    "prettier": "3.5.2",
     "prettier-config-kwork": "0.0.26"
   },
   "prettier": "prettier-config-kwork"
