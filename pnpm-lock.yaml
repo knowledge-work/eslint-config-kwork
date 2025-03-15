@@ -45,8 +45,8 @@ importers:
         specifier: 0.11.4
         version: 0.11.4(eslint@8.57.1)(typescript@5.7.3)
       eslint-plugin-strict-dependencies:
-        specifier: 1.3.16
-        version: 1.3.16
+        specifier: 1.3.17
+        version: 1.3.17
       eslint-plugin-unused-imports:
         specifier: 4.1.4
         version: 4.1.4(@typescript-eslint/eslint-plugin@8.26.1(@typescript-eslint/parser@8.26.1(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)
@@ -632,8 +632,8 @@ packages:
       eslint: '>=8'
       typescript: '>=4.8.4 <5.8.0'
 
-  eslint-plugin-strict-dependencies@1.3.16:
-    resolution: {integrity: sha512-JVSLYXArhgPaUPcewUM27RSxAUZlL01ys5SYnPuS5qjsrYF5wJrGmzZaYpAxNQep/8ID3eumJle6VB3LWJwF8A==}
+  eslint-plugin-strict-dependencies@1.3.17:
+    resolution: {integrity: sha512-F/xx3ieG5qf6+riOSw2ny674MYFFf8phhHBoB9k4TC8eWMHaCn8GlRca5/rxT145rWIqyAOoIFTQWoPKSfuDOw==}
 
   eslint-plugin-unused-imports@4.1.4:
     resolution: {integrity: sha512-YptD6IzQjDardkl0POxnnRBhU1OEePMV0nd6siHaRBbd+lyh6NAhFEobiznKU7kTsSsDeSD62Pe7kAM1b7dAZQ==}
@@ -2227,7 +2227,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-strict-dependencies@1.3.16:
+  eslint-plugin-strict-dependencies@1.3.17:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.8
