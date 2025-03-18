@@ -42,8 +42,8 @@ importers:
         specifier: 1.0.28
         version: 1.0.28(eslint@8.57.1)(typescript@5.7.3)
       eslint-plugin-storybook:
-        specifier: 0.11.4
-        version: 0.11.4(eslint@8.57.1)(typescript@5.7.3)
+        specifier: 0.11.6
+        version: 0.11.6(eslint@8.57.1)(typescript@5.7.3)
       eslint-plugin-strict-dependencies:
         specifier: 1.3.17
         version: 1.3.17
@@ -666,12 +666,11 @@ packages:
   eslint-plugin-return-type@1.0.28:
     resolution: {integrity: sha512-2xZ5Hatr+TadeKUqoeiIGL0gq7+BZEJWOa1ldd/VgqHkgzw9tBbU0Q+bdVn9YUxLtCq1yo0I8RV4rP27RuULfQ==}
 
-  eslint-plugin-storybook@0.11.4:
-    resolution: {integrity: sha512-OvLf1ljpDQ6Y/U2kM7hT5hESn+hg0vq/nh62+YiPFWdRIEjuQM9ivmwoTP9nRBExH8fT2VPqM5t/RB68lqTWJw==}
+  eslint-plugin-storybook@0.11.6:
+    resolution: {integrity: sha512-3WodYD6Bs9ACqnB+TP2TuLh774c/nacAjxSKOP9bHJ2c8rf+nrhocxjjeAWNmO9IPkFIzTKlcl0vNXI2yYpVOw==}
     engines: {node: '>= 18'}
     peerDependencies:
       eslint: '>=8'
-      typescript: '>=4.8.4 <5.8.0'
 
   eslint-plugin-strict-dependencies@1.3.17:
     resolution: {integrity: sha512-F/xx3ieG5qf6+riOSw2ny674MYFFf8phhHBoB9k4TC8eWMHaCn8GlRca5/rxT145rWIqyAOoIFTQWoPKSfuDOw==}
@@ -2279,15 +2278,15 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-storybook@0.11.4(eslint@8.57.1)(typescript@5.7.3):
+  eslint-plugin-storybook@0.11.6(eslint@8.57.1)(typescript@5.7.3):
     dependencies:
       '@storybook/csf': 0.1.13
       '@typescript-eslint/utils': 8.26.1(eslint@8.57.1)(typescript@5.7.3)
       eslint: 8.57.1
       ts-dedent: 2.2.0
-      typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
+      - typescript
 
   eslint-plugin-strict-dependencies@1.3.17:
     dependencies:
