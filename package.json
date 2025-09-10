@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "prettier": "3.6.2",
-    "prettier-config-kwork": "0.0.32"
+    "prettier-config-kwork": "0.0.33"
   },
   "prettier": "prettier-config-kwork"
 }
