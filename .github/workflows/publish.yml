@@ -36,6 +36,10 @@ jobs:
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
+      # Trusted publishing requires npm CLI version 11.5.1 or later.
+      - name: Ensure npm >= 11.5.1
+        run: npm i -g npm@^11.5.1
+
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 

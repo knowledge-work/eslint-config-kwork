@@ -33,7 +33,7 @@
     "format": "prettier --write .",
     "release": "pnpm release:check && pnpm release:publish",
     "release:check": "echo \"Run check for version $npm_package_version\" && pnpm check",
-    "release:publish": "git push --tags && git push origin main && pnpm publish ."
+    "release:publish": "npm publish . && git push origin main && git push --tags"
   },
   "dependencies": {
     "@eslint/eslintrc": "3.3.1",
