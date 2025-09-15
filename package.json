@@ -46,7 +46,7 @@
     "eslint-plugin-date": "1.0.0",
     "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-jsx-expressions": "1.3.2",
-    "eslint-plugin-return-type": "1.0.33",
+    "eslint-plugin-return-type": "1.0.34",
     "eslint-plugin-storybook": "9.1.5",
     "eslint-plugin-strict-dependencies": "1.3.22",
     "eslint-plugin-unused-imports": "4.2.0",
