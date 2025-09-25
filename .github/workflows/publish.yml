@@ -10,8 +10,6 @@ on:
           - 'patch'
           - 'minor'
           - 'major'
-  schedule:
-    - cron: '0 0 20 * *' # at AM 9 JST on day of month 20
 
 concurrency:
   group: ${{ github.workflow }}
